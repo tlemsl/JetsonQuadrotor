@@ -1,0 +1,2 @@
+# optitrack_receiver: Python standard library only (NatNet UDP decode).
+# ROS2 nodes need rclpy / geometry_msgs / std_msgs from your ROS Foxy environment.

@@ -1,0 +1,7 @@
+# Dev workflow:
+#   pip install -e workspace/src/optitrack
+# then build ROS package `ros2/optitrack_ros` with colcon (ROS 2 Foxy sourced).
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,11 @@
+natnet_pose_node:
+  ros__parameters:
+    server_ip: "127.0.0.1"
+    local_ip: "0.0.0.0"
+    multicast_group: "239.255.42.99"
+    use_multicast: true
+    command_port: 1510
+    data_port: 1511
+    rigid_body_id: -1
+    frame_id: "world"
+    pose_topic: "/optitrack/natnet/pose"

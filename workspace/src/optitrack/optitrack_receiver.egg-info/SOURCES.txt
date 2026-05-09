@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+optitrack_receiver/__init__.py
+optitrack_receiver/cli_natnet.py
+optitrack_receiver/models.py
+optitrack_receiver/natnet_receiver.py
+optitrack_receiver.egg-info/PKG-INFO
+optitrack_receiver.egg-info/SOURCES.txt
+optitrack_receiver.egg-info/dependency_links.txt
+optitrack_receiver.egg-info/entry_points.txt
+optitrack_receiver.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+optitrack-natnet-print = optitrack_receiver.cli_natnet:main
+

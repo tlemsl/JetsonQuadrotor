@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: optitrack-receiver
+Version: 0.1.0
+Summary: Receive OptiTrack Motive LAN streams via NatNet UDP (decode-only).
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+
+UNKNOWN
+
