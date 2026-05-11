@@ -7,9 +7,12 @@
   <maintainer email="none@example.com">DroneXavier</maintainer>
   <license>Apache-2.0</license>
 
+  <depend>px4_msgs</depend>
+
   <exec_depend>rclpy</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
   <!-- Install from source (ROS 2 / ament): https://github.com/NOKOV-MOCAP/vrpn_client_ros/tree/foxy-devel -->
   <exec_depend>vrpn_client_ros</exec_depend>
 

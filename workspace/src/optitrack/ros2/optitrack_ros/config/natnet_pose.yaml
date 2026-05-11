@@ -1,11 +1,26 @@
 natnet_pose_node:
   ros__parameters:
-    server_ip: "127.0.0.1"
+    # Motive PC (NatNet); unicast: set use_multicast false and local_ip to this machine's LAN IP.
+    server_ip: "192.168.1.141"
     local_ip: "0.0.0.0"
     multicast_group: "239.255.42.99"
-    use_multicast: true
+    use_multicast: false
     command_port: 1510
     data_port: 1511
     rigid_body_id: -1
     frame_id: "world"
     pose_topic: "/optitrack/natnet/pose"
+
+    # OptiTrack world -> internal ENU (East, North, Up), then PX4 VehicleOdometry.
+    # z_up: NatNet axes already Z-up; y_up: apply fixed Y-up->Z-up (Motive-style) then yaw.
+    vertical_axis_mode: "z_up"
+    world_yaw_offset_deg: 0.0
+
+    publish_visual_odometry: true
+    visual_odometry_topic: "/fmu/in/vehicle_visual_odometry"
+    # px4_msgs has no POSE_FRAME_ENU; when true, position/q are converted to NED for PX4.
+    # When false, position is [East, North, Up] m and pose_frame=UNKNOWN (may not fuse).
+    px4_convert_enu_to_ned: true
+
+    position_variance: [0.01, 0.01, 0.01]
+    orientation_variance: [0.001, 0.001, 0.001]
