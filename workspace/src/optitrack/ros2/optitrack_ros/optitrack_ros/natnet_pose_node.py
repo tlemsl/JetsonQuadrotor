@@ -60,8 +60,8 @@ class NatNetPoseNode(Node):
         self.create_timer(period_s, self._publish_latest)
 
         self.get_logger().info(
-            "NatNet rigid body pose publisher (topic=%s). Params: server_ip, rigid_body_id, …",
-            topic,
+            f"NatNet rigid body pose publisher (topic={topic}). "
+            "Params: server_ip, rigid_body_id, …"
         )
 
     def destroy_node(self) -> bool:

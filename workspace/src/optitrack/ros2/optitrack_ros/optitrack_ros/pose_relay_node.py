@@ -25,7 +25,7 @@ class PoseRelayNode(Node):
         self._pub = self.create_publisher(PoseStamped, output_topic, 10)
         self.create_subscription(PoseStamped, input_topic, self._cb, 10)
 
-        self.get_logger().info("Relay %s -> %s", input_topic, output_topic)
+        self.get_logger().info(f"Relay {input_topic} -> {output_topic}")
 
     def _cb(self, msg: PoseStamped) -> None:
         self._pub.publish(msg)
